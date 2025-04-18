@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant - Multiple Models, One Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar overlay -->
+        <div class="sidebar-overlay"></div>
+        
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Chat History</h2>
+            </div>
+            <div class="chat-history">
+                <!-- Chat history items will be dynamically populated -->
+                <div class="chat-item">
+                    <div class="chat-title">General Questions</div>
+                    <div class="chat-date">Today</div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-title">Code Assistance</div>
+                    <div class="chat-date">Yesterday</div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-title">Project Planning</div>
+                    <div class="chat-date">3 days ago</div>
+                </div>
+                <div class="chat-item">
+                    <div class="chat-title">Research Help</div>
+                    <div class="chat-date">Last week</div>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="navbar">
+            <div class="sidebar-toggle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="logo"></div>
+            <div class="nav-right">
+            </div>
+        </nav>
+
+        <main class="hero">
+            <h1 class="greeting">Hello, User</h1>
+
+            <div class="model-grid">
+                <!-- Model cards removed as requested -->
+            </div>
+        </main>
+        
+        <div class="search-container">
+            <div class="search-box">
+                <div class="model-selector">
+                    <div class="selected-model">Claude 3.7 Sonnet</div>
+                    <div class="model-dropdown">
+                        <div class="model-option">
+                            <div class="model-info">
+                                <div class="model-name">Claude 3.7 Sonnet</div>
+                                <div class="model-description">Our most intelligent model yet</div>
+                            </div>
+                            <div class="model-check">✓</div>
+                        </div>
+                        <div class="model-option">
+                            <div class="model-info">
+                                <div class="model-name">GPT-4</div>
+                                <div class="model-description">Advanced reasoning capabilities</div>
+                            </div>
+                        </div>
+                        <div class="model-option">
+                            <div class="model-info">
+                                <div class="model-name">GPT-3.5</div>
+                                <div class="model-description">Fast and reliable assistant</div>
+                            </div>
+                        </div>
+                        <div class="model-option">
+                            <div class="model-info">
+                                <div class="model-name">Gemini</div>
+                                <div class="model-description">Google's multimodal AI</div>
+                            </div>
+                        </div>
+                        <div class="more-models">
+                            More models <span>›</span>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" placeholder="Ask Soham" class="search-input">
+                <button class="search-button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.7071 2.29289C22.0976 2.68342 22.0976 3.31658 21.7071 3.70711L12.7071 12.7071C12.3166 13.0976 11.6834 13.0976 11.2929 12.7071C10.9024 12.3166 10.9024 11.6834 11.2929 11.2929L20.2929 2.29289C20.6834 1.90237 21.3166 1.90237 21.7071 2.29289Z" fill="currentColor"/>
+                        <path d="M21.7071 2.29289C21.9931 2.57889 22.0787 2.99046 21.9239 3.35491L15.9239 21.3549C15.7537 21.7634 15.3532 22.0113 14.9176 21.9994C14.482 21.9876 14.0955 21.7186 13.9466 21.3019L11.2929 13.7071L3.69807 11.0534C3.28143 10.9045 3.01241 10.518 3.00057 10.0824C2.98873 9.64682 3.23656 9.24633 3.64513 9.07612L21.6451 3.07612C22.0096 2.92133 22.4211 3.00692 22.7071 3.29289L21.7071 2.29289Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
